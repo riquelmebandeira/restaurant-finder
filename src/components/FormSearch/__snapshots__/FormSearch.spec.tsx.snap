@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FormSearch /> should match the snapshot 1`] = `
+<form
+  class="sc-bcXHqe kvZRrA"
+>
+  <img
+    alt="ícone de pesquisa"
+    src=""
+  />
+  <input
+    placeholder="Encontre um restaurante"
+    type="text"
+    value=""
+  />
+</form>
+`;
