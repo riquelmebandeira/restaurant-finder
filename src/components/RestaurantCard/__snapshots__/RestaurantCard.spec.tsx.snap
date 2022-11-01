@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RestaurantCard /> should match the snapshot 1`] = `
+<div
+  class="sc-bcXHqe ecncrn"
+>
+  <a
+    href="/restaurant/1"
+  >
+    <img
+      alt="Foto do restaurante arabek"
+      src=""
+    />
+    <h6>
+      arabek
+    </h6>
+  </a>
+</div>
+`;
