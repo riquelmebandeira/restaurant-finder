@@ -17,6 +17,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: ${({theme}) => theme.font.family.default}
   }
 
+  h6 { font-size: 1.6rem };
+
 `
 
 export default GlobalStyle
