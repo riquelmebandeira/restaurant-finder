@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Heading } from '../Typography'
 import * as Styled from './styles'
 
 type RestaurantCardProps = {
@@ -14,7 +15,13 @@ const RestaurantCard = ({ id, name, image }: RestaurantCardProps) => (
         src={image}
         alt={`Foto do restaurante ${name}`}
       />
-      <h6>{name}</h6>
+      <Heading
+        level={6}
+        color="white"
+        size="medium"
+      >
+        {name}
+      </Heading>
     </Link>
   </Styled.Card>
 )

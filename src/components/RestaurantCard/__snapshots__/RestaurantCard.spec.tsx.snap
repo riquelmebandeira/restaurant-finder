@@ -2,7 +2,7 @@
 
 exports[`<RestaurantCard /> should match the snapshot 1`] = `
 <div
-  class="sc-bcXHqe kfmyAW"
+  class="sc-dkrFOg EKNWO"
 >
   <a
     href="/restaurant/1"
@@ -11,7 +11,10 @@ exports[`<RestaurantCard /> should match the snapshot 1`] = `
       alt="Foto do restaurante arabek"
       src=""
     />
-    <h6>
+    <h6
+      class="sc-bcXHqe cEJMAp"
+      color="white"
+    >
       arabek
     </h6>
   </a>

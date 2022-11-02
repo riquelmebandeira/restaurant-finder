@@ -21,6 +21,5 @@ export const Card = styled.div`
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    color: ${({ theme }) => theme.colors.white};
   }
 `
