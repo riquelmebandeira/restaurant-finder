@@ -3,7 +3,7 @@ import RestaurantCard from '.'
 import { renderWithRouterAndTheme } from '../../styles/render-theme'
 
 const props = {
-  id: 1,
+  id: '1',
   name: 'arabek',
   image: ''
 }

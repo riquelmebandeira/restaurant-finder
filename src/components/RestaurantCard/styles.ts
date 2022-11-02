@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Card = styled.div`
-  max-width: 35rem;
+  width: 35rem;
   height: 17rem;
   position: relative;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
 
   *:not(h6) {
     width: 100%;
@@ -13,14 +13,14 @@ export const Card = styled.div`
 
   img {
     object-fit: cover;
-    border-radius: .8rem;
-    filter: brightness(60%)
+    border-radius: 0.8rem;
+    filter: brightness(60%);
   }
 
   h6 {
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    color: ${({theme}) => theme.colors.white}
+    color: ${({ theme }) => theme.colors.white};
   }
-` 
+`

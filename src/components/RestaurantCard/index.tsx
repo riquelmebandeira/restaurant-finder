@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import * as Styled from './styles'
 
 type RestaurantCardProps = {
-  id: number
+  id: string
   name: string
   image: string
 }
