@@ -22,7 +22,10 @@ const FormSearch = ({
   }
 
   return (
-    <Styled.Form onSubmit={handleSubmit}>
+    <Styled.Form
+      onSubmit={handleSubmit}
+      aria-label="form"
+    >
       <img
         src={icon}
         alt={alt}

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 
 export const Form = styled.form`
   ${({theme}) => css`
+    background-color: ${theme.colors.white};
     max-width: 54rem;
     height: 5rem;
     padding: 1.3rem 2rem;
