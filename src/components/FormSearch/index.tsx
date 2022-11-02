@@ -1,24 +1,22 @@
 import { FormEvent, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import * as Styled from './styles'
 
 type FormSearchProps = {
   placeholder: string
   icon: string
   alt: string
-  setSearchTerm: Function
 }
 
-const FormSearch = ({
-  placeholder,
-  icon,
-  alt,
-  setSearchTerm
-}: FormSearchProps) => {
+const FormSearch = ({ placeholder, icon, alt }: FormSearchProps) => {
   const [inputValue, setInputValue] = useState('')
+  const navigate = useNavigate()
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault()
-    setSearchTerm(inputValue)
+    if (inputValue) {
+      navigate(`/search?restaurant=${inputValue}`)
+    }
   }
 
   return (

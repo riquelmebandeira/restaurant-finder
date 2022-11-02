@@ -36,7 +36,6 @@ const Header = () => (
       placeholder="Encontre um restaurante"
       icon={searchIcon}
       alt="ícone de pesquisa"
-      setSearchTerm={() => true}
     />
   </Styled.Header>
 )
