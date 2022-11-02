@@ -4,7 +4,7 @@ import { renderWithRouterAndTheme } from '../../styles/render-theme'
 
 describe('<Header />', () => {
   it('should render correctly', () => {
-    renderWithRouterAndTheme(<Header />)
+    renderWithRouterAndTheme(<Header main />)
 
     const logo = screen.getByRole('img', { name: /logomarca/i })
     const homeLink = screen.getByRole('link')

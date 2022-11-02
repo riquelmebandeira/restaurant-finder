@@ -5,7 +5,11 @@ import logo from '../../assets/logo.svg'
 import * as Styled from './styles'
 import { Heading, Text } from '../Typography'
 
-const Header = () => (
+type HeaderProps = {
+  main?: boolean
+}
+
+const Header = ({ main = false }: HeaderProps) => (
   <Styled.Header>
     <div className="content">
       <Link to="/">
@@ -15,21 +19,23 @@ const Header = () => (
         />
       </Link>
 
-      <div className="text-box">
-        <Heading
-          level={1}
-          color="darkDown"
-        >
-          Descubra novos sabores
-        </Heading>
-        <Text
-          as="span"
-          fontSize="large"
-          color="darkUp"
-        >
-          Aqui eu converso com você sobre <br /> nossa proposta
-        </Text>
-      </div>
+      {main && (
+        <div className="text-box">
+          <Heading
+            level={1}
+            color="darkDown"
+          >
+            Descubra novos sabores
+          </Heading>
+          <Text
+            as="span"
+            fontSize="large"
+            color="darkUp"
+          >
+            Aqui eu converso com você sobre <br /> nossa proposta
+          </Text>
+        </div>
+      )}
     </div>
 
     <FormSearch
