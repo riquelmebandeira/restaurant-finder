@@ -19,7 +19,7 @@ function Home() {
 
   return (
     <>
-      <Header />
+      <Header main />
       <Styled.Container>
         <Heading
           color="darkDown"
