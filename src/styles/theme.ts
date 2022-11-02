@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme } from 'styled-components'
 
 export const theme: DefaultTheme = {
   colors: {
@@ -14,18 +14,17 @@ export const theme: DefaultTheme = {
   },
   font: {
     family: {
-      default: "'Poppins', sans-serif",
+      default: "'Poppins', sans-serif"
     },
     sizes: {
-      h1: '3.2rem',
-      h2: '2.4rem',
-      h3: '2rem',
-      h4: '1.7rem',
-      h5: '1.6rem',
-      h6: '1.5rem',
-      lead: '1.7rem',
-      paragraph: '1.4rem',
-      small: '1.2rem'
-    },
+      huge: '3.2rem',
+      xxlarge: '2.4rem',
+      xlarge: '2rem',
+      large: '1.7rem',
+      medium: '1.6rem',
+      small: '1.5rem',
+      xsmall: '1.4rem',
+      xxsmall: '1.2rem'
+    }
   }
 }

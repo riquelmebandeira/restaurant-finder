@@ -13,12 +13,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-size: 1.6rem;
-    font-family: ${({theme}) => theme.font.family.default}
+    font-size: ${({ theme }) => theme.font.sizes.medium};
+    font-family: ${({ theme }) => theme.font.family.default}
   }
-
-  h6 { font-size: 1.6rem };
-
 `
 
 export default GlobalStyle

@@ -1,13 +1,13 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Form = styled.form`
-  ${({theme}) => css`
+  ${({ theme }) => css`
     background-color: ${theme.colors.white};
     max-width: 54rem;
     height: 5rem;
     padding: 1.3rem 2rem;
     border: 1px solid ${theme.colors.lightMedium};
-    border-radius: .8rem;
+    border-radius: 0.8rem;
     display: flex;
     align-items: center;
 
@@ -18,7 +18,7 @@ export const Form = styled.form`
       width: 100%;
 
       &::placeholder {
-        font-size: ${theme.font.sizes.paragraph};
+        font-size: ${theme.font.sizes.xsmall};
         font-family: ${theme.font.family.default};
         color: ${theme.colors.dark};
       }

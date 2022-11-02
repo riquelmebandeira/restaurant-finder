@@ -3,6 +3,7 @@ import FormSearch from '../FormSearch'
 import searchIcon from '../../assets/icons/search.svg'
 import logo from '../../assets/logo.svg'
 import * as Styled from './styles'
+import { Heading, Text } from '../Typography'
 
 const Header = () => (
   <Styled.Header>
@@ -15,10 +16,14 @@ const Header = () => (
       </Link>
 
       <div className="text-box">
-        <h1>Descubra novos sabores</h1>
-        <span>
+        <Heading color="darkDown">Descubra novos sabores</Heading>
+        <Text
+          as="span"
+          fontSize="large"
+          color="darkUp"
+        >
           Aqui eu converso com você sobre <br /> nossa proposta
-        </span>
+        </Text>
       </div>
     </div>
 
