@@ -19,8 +19,11 @@ export type Restaurant = {
 
 export const fetchRestaurants = async (
   page = 1,
-  limit = 10
+  limit = 10,
+  search = ''
 ): Promise<Restaurant[]> => {
-  const restaurants = await api.get(`/?page=${page}&limit=${limit}`)
+  const restaurants = await api.get(
+    `/?page=${page}&limit=${limit}&search=${search}`
+  )
   return restaurants.data.data
 }
