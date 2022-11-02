@@ -7,7 +7,7 @@ export const Header = styled.header`
   background-position: center;
   height: 37.5rem;
   position: relative;
-  width: 100vw;
+  width: 100%;
 
   .content {
     max-width: 110rem;

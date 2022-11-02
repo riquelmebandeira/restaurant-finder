@@ -16,7 +16,12 @@ const Header = () => (
       </Link>
 
       <div className="text-box">
-        <Heading color="darkDown">Descubra novos sabores</Heading>
+        <Heading
+          level={1}
+          color="darkDown"
+        >
+          Descubra novos sabores
+        </Heading>
         <Text
           as="span"
           fontSize="large"

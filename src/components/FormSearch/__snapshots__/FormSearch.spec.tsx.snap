@@ -3,7 +3,7 @@
 exports[`<FormSearch /> should match the snapshot 1`] = `
 <form
   aria-label="form"
-  class="sc-bcXHqe dFNhKi"
+  class="sc-bcXHqe iWnCCi"
 >
   <img
     alt="ícone de pesquisa"
