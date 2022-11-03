@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RestaurantHeader /> should match the snapshot 1`] = `
+<header
+  class="sc-bcXHqe licyub"
+>
+  <div
+    class="back-button"
+  >
+    <img
+      alt="botão de voltar"
+      src="left-arrow.svg"
+    />
+    <span
+      class="sc-hLBbgP eQRiiD"
+      color="white"
+      font-size="xxsmall"
+      font-weight="800"
+    >
+      Voltar
+    </span>
+  </div>
+  <div
+    class="sc-gswNZR gcgOwa"
+  >
+    <img
+      alt="logomarca do restaurante arabek"
+      src=""
+    />
+    <div>
+      <h1
+        class="sc-dkrFOg fBsatl"
+      >
+        arabek
+      </h1>
+      <p
+        class="sc-hLBbgP fCiFmx"
+      >
+        551143829385
+        <br />
+        http://www.arabek.com.br
+      </p>
+    </div>
+  </div>
+</header>
+`;
