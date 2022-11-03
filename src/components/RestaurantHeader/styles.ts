@@ -5,7 +5,6 @@ type HeaderProps = {
 }
 
 export const Header = styled.header<HeaderProps>`
-  display: flex;
   position: relative;
   height: 19rem;
   width: 100%;
@@ -39,9 +38,11 @@ export const Header = styled.header<HeaderProps>`
 export const Div = styled.div`
   display: flex;
   align-items: center;
-  max-width: 54rem;
+  max-width: 55rem;
+  padding: 0 1rem;
   margin: auto;
   position: relative;
+  top: 4rem;
   z-index: 100;
 
   img {
