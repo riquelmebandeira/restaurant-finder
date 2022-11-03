@@ -12,8 +12,10 @@ export const Grid = styled.div`
 
 export const Container = styled.main`
   max-width: 75rem;
+  min-height: 30rem;
   margin: auto;
   padding: 0 1rem;
+  position: relative;
 
   h2 {
     margin: 3rem 0;
@@ -24,7 +26,7 @@ export const Container = styled.main`
   }
 `
 
-export const Wrapper = styled.div`
+export const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,4 +47,8 @@ export const Loading = styled.img.attrs({
   src: loadingIcon
 })`
   animation: ${rotate} 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import * as Styled from './styles'
+import * as S from './styles'
 import { fetchRestaurants, Restaurant } from '../../api'
 import Header from '../../components/Header'
 import RestaurantCard from '../../components/RestaurantCard'
@@ -8,24 +8,29 @@ import { useSearchParams } from 'react-router-dom'
 
 function Search() {
   const [searchParams] = useSearchParams()
-  const [restaurants, setRestaurants] = useState([] as Restaurant[])
+  const [restaurants, setRestaurants] = useState<Restaurant[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(false)
-
   const searchTerm = searchParams.get('restaurant') as string
 
   useEffect(() => {
+    setIsLoading(true)
     fetchRestaurants(1, 10, searchTerm)
-      .then((res) => setRestaurants(res))
-      .catch(() => setError(true))
-    setIsLoading(false)
+      .then((res) => {
+        setRestaurants(res)
+        setIsLoading(false)
+      })
+      .catch(() => {
+        setError(true)
+        setIsLoading(false)
+      })
   }, [searchParams])
 
   return (
     <>
       <Header />
-      <Styled.Container>
-        <Styled.Wrapper>
+      <S.Container>
+        <S.Flex>
           <Heading
             color="darkDown"
             level={2}
@@ -49,22 +54,24 @@ function Search() {
               {searchParams.get('restaurant')}
             </Heading>
           </div>
-        </Styled.Wrapper>
+        </S.Flex>
 
-        {isLoading && <Styled.Loading />}
+        {isLoading && <S.Loading />}
 
-        <Styled.Grid>
-          {restaurants.map(({ id, name, image }) => (
-            <RestaurantCard
-              key={id}
-              id={id}
-              name={name}
-              image={image}
-            />
-          ))}
-        </Styled.Grid>
+        {!isLoading && !error ? (
+          <S.Grid>
+            {restaurants.map(({ id, name, image }) => (
+              <RestaurantCard
+                key={id}
+                id={id}
+                name={name}
+                image={image}
+              />
+            ))}
+          </S.Grid>
+        ) : null}
 
-        {restaurants.length < 1 && (
+        {!isLoading && restaurants.length < 1 ? (
           <Heading
             color="darkDown"
             level={2}
@@ -72,7 +79,7 @@ function Search() {
           >
             Nenhum resultado foi encontrado.
           </Heading>
-        )}
+        ) : null}
 
         {error && (
           <Heading
@@ -85,7 +92,7 @@ function Search() {
             Tente novamente mais tarde.
           </Heading>
         )}
-      </Styled.Container>
+      </S.Container>
     </>
   )
 }
