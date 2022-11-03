@@ -8,7 +8,7 @@ type HeadingProps = {
   level?: 1 | 2 | 3 | 4 | 5 | 6
 }
 
-const Heading = styled.h1.attrs<HeadingProps>(({ level }) => ({
+const Heading = styled.h1.attrs<HeadingProps>(({ level = 1 }) => ({
   as: `h${level}`
 }))<HeadingProps>`
   ${({ color = 'white', size = 'huge', fontWeight = 800 }) => css`
