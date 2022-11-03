@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import FormSearch from '../FormSearch'
-import searchIcon from '../../assets/icons/search.svg'
-import logo from '../../assets/logo.svg'
-import * as S from './styles'
 import { Heading } from '../Heading/styles'
 import { Text } from '../Text/styles'
+import * as S from './styles'
+import searchIcon from '../../assets/icons/search.svg'
+import logo from '../../assets/logo.svg'
 
 type HeaderProps = {
   main?: boolean

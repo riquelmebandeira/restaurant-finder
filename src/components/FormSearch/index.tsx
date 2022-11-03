@@ -1,6 +1,6 @@
 import { FormEvent, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import * as Styled from './styles'
+import * as S from './styles'
 
 type FormSearchProps = {
   placeholder: string
@@ -20,7 +20,7 @@ const FormSearch = ({ placeholder, icon, alt }: FormSearchProps) => {
   }
 
   return (
-    <Styled.Form
+    <S.Form
       onSubmit={handleSubmit}
       aria-label="form"
     >
@@ -34,7 +34,7 @@ const FormSearch = ({ placeholder, icon, alt }: FormSearchProps) => {
         value={inputValue}
         onChange={({ target }) => setInputValue(target.value)}
       />
-    </Styled.Form>
+    </S.Form>
   )
 }
 
