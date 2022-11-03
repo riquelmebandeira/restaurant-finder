@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
-import * as S from './styles'
-import { fetchRestaurants, Restaurant } from '../../api'
+import { useSearchParams } from 'react-router-dom'
 import Header from '../../components/Header'
 import RestaurantCard from '../../components/RestaurantCard'
 import { Heading } from '../../components/Heading/styles'
 import { Text } from '../../components/Text/styles'
-import { useSearchParams } from 'react-router-dom'
+import { Loading } from '../../components/Loading/styles'
+import { fetchRestaurants, Restaurant } from '../../api'
+import * as S from './styles'
 
 function Search() {
   const [searchParams] = useSearchParams()
@@ -57,7 +58,7 @@ function Search() {
           </div>
         </S.Flex>
 
-        {isLoading && <S.Loading />}
+        {isLoading && <Loading />}
 
         {!isLoading && !error ? (
           <S.Grid>

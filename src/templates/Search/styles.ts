@@ -1,5 +1,4 @@
-import styled, { keyframes } from 'styled-components'
-import loadingIcon from '../../assets/icons/loading.svg'
+import styled from 'styled-components'
 
 export const Grid = styled.div`
   max-width: 75rem;
@@ -30,25 +29,4 @@ export const Flex = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-`
-
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg)
-  }
-`
-
-export const Loading = styled.img.attrs({
-  alt: 'ícone de carregamento',
-  src: loadingIcon
-})`
-  animation: ${rotate} 2s linear infinite;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 `

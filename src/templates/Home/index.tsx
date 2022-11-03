@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
-import * as S from './styles'
-import { fetchRestaurants, Restaurant } from '../../api'
 import Header from '../../components/Header'
 import RestaurantCard from '../../components/RestaurantCard'
 import { Heading } from '../../components/Heading/styles'
+import { Loading } from '../../components/Loading/styles'
+import { useEffect, useState } from 'react'
+import { fetchRestaurants, Restaurant } from '../../api'
+import * as S from './styles'
 
 function Home() {
   const [restaurants, setRestaurants] = useState([] as Restaurant[])
@@ -29,7 +30,7 @@ function Home() {
           Restaurantes
         </Heading>
 
-        {isLoading && <S.Loading />}
+        {isLoading && <Loading />}
 
         <S.Grid>
           {restaurants.map(({ id, name, image }) => (
