@@ -2,17 +2,17 @@
 
 exports[`<RestaurantHeader /> should match the snapshot 1`] = `
 <header
-  class="sc-bcXHqe dAbGKN"
+  class="sc-bcXHqe jLBTwN"
 >
   <div
-    class="back-button"
+    class="sc-gswNZR gdmCMg"
   >
     <img
       alt="botão de voltar"
       src="left-arrow.svg"
     />
     <span
-      class="sc-hLBbgP eQRiiD"
+      class="sc-eDvSVe deGIFn"
       color="white"
       font-size="xxsmall"
       font-weight="800"
@@ -21,7 +21,7 @@ exports[`<RestaurantHeader /> should match the snapshot 1`] = `
     </span>
   </div>
   <div
-    class="sc-gswNZR ieTmbI"
+    class="sc-dkrFOg eeNFKa"
   >
     <img
       alt="logomarca do restaurante arabek"
@@ -29,12 +29,12 @@ exports[`<RestaurantHeader /> should match the snapshot 1`] = `
     />
     <div>
       <h1
-        class="sc-dkrFOg fBsatl"
+        class="sc-hLBbgP ljIFmN"
       >
         arabek
       </h1>
       <p
-        class="sc-hLBbgP fCiFmx"
+        class="sc-eDvSVe dsvcDV"
       >
         551143829385
         <br />

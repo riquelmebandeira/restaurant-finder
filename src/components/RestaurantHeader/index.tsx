@@ -23,10 +23,7 @@ const RestaurantHeader = ({
 
   return (
     <S.Header backgroundImg={image}>
-      <div
-        className="back-button"
-        onClick={() => navigate(-1)}
-      >
+      <S.BackButton onClick={() => navigate(-1)}>
         <img
           src={leftArrow}
           alt="botão de voltar"
@@ -39,9 +36,9 @@ const RestaurantHeader = ({
         >
           Voltar
         </Text>
-      </div>
+      </S.BackButton>
 
-      <S.Div>
+      <S.Container>
         <img
           src={logo}
           alt={`logomarca do restaurante ${name}`}
@@ -54,7 +51,7 @@ const RestaurantHeader = ({
             {website}
           </Text>
         </div>
-      </S.Div>
+      </S.Container>
     </S.Header>
   )
 }

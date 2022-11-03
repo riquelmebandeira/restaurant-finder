@@ -9,6 +9,7 @@ export const Header = styled.header<HeaderProps>`
   height: 19rem;
   width: 100%;
 
+  // BACKGROUND IMAGE
   &::before {
     content: '';
     position: absolute;
@@ -21,34 +22,35 @@ export const Header = styled.header<HeaderProps>`
     background-position: center;
     filter: brightness(50%);
   }
+`
 
-  .back-button {
-    img {
-      margin-right: 1.4rem;
-    }
+export const BackButton = styled.div`
+  display: flex;
+  cursor: pointer;
+  position: absolute;
+  top: 5.2rem;
+  left: 17.4rem;
+  z-index: 100;
 
-    display: flex;
-    cursor: pointer;
-    position: absolute;
-    top: 5.2rem;
-    left: 17.4rem;
-    z-index: 100;
+  img {
+    margin-right: 1.4rem;
   }
 `
-export const Div = styled.div`
-  display: flex;
+
+export const Container = styled.div`
   align-items: center;
+  display: flex;
+  margin: auto;
   max-width: 55rem;
   padding: 0 1rem;
-  margin: auto;
   position: relative;
   top: 4rem;
   z-index: 100;
 
   img {
-    width: 12rem;
-    height: 12rem;
     border-radius: 50%;
+    height: 12rem;
     margin-right: 2.5rem;
+    width: 12rem;
   }
 `
