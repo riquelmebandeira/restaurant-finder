@@ -13,9 +13,14 @@ function Home() {
 
   useEffect(() => {
     fetchRestaurants()
-      .then((res) => setRestaurants(res))
-      .catch(() => setError(true))
-    setIsLoading(false)
+      .then((res) => {
+        setRestaurants(res)
+        setIsLoading(false)
+      })
+      .catch(() => {
+        setError(true)
+        setIsLoading(false)
+      })
   }, [])
 
   return (

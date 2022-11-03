@@ -13,6 +13,7 @@ export const Container = styled.main`
   max-width: 75rem;
   min-height: 30rem;
   margin: auto;
+  margin-bottom: 17.5rem;
   padding: 0 1rem;
   position: relative;
 
