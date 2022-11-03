@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
-import * as Styled from './styles'
+import * as S from './styles'
 import { fetchRestaurants, Restaurant } from '../../api'
 import Header from '../../components/Header'
 import RestaurantCard from '../../components/RestaurantCard'
-import { Heading } from '../../components/Typography'
+import { Heading } from '../../components/Heading/styles'
 
 function Home() {
   const [restaurants, setRestaurants] = useState([] as Restaurant[])
@@ -20,7 +20,7 @@ function Home() {
   return (
     <>
       <Header main />
-      <Styled.Container>
+      <S.Container>
         <Heading
           color="darkDown"
           level={2}
@@ -29,9 +29,9 @@ function Home() {
           Restaurantes
         </Heading>
 
-        {isLoading && <Styled.Loading />}
+        {isLoading && <S.Loading />}
 
-        <Styled.Grid>
+        <S.Grid>
           {restaurants.map(({ id, name, image }) => (
             <RestaurantCard
               key={id}
@@ -40,7 +40,7 @@ function Home() {
               image={image}
             />
           ))}
-        </Styled.Grid>
+        </S.Grid>
 
         {error && (
           <Heading
@@ -53,7 +53,7 @@ function Home() {
             Tente novamente mais tarde.
           </Heading>
         )}
-      </Styled.Container>
+      </S.Container>
     </>
   )
 }

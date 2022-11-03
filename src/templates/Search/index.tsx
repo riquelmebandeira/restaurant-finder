@@ -3,7 +3,8 @@ import * as S from './styles'
 import { fetchRestaurants, Restaurant } from '../../api'
 import Header from '../../components/Header'
 import RestaurantCard from '../../components/RestaurantCard'
-import { Heading, Text } from '../../components/Typography'
+import { Heading } from '../../components/Heading/styles'
+import { Text } from '../../components/Text/styles'
 import { useSearchParams } from 'react-router-dom'
 
 function Search() {

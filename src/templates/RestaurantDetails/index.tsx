@@ -1,10 +1,10 @@
-/* eslint-disable */
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { fetchRestaurant, Restaurant } from '../../api'
 import RestaurantHeader from '../../components/RestaurantHeader'
 import * as S from './styles'
-import { Heading, Text } from '../../components/Typography'
+import { Heading } from '../../components/Heading/styles'
+import { Text } from '../../components/Text/styles'
 import { Loading } from '../Home/styles'
 
 const RestaurantDetails = () => {

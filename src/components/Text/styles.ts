@@ -7,12 +7,10 @@ type TextProps = {
   fontSize?: keyof typeof theme.font.sizes
 }
 
-const Text = styled.p<TextProps>`
+export const Text = styled.p<TextProps>`
   ${({ color = 'white', fontWeight = 400, fontSize = 'xsmall' }) => css`
     font-weight: ${fontWeight};
     color: ${theme.colors[color]};
     font-size: ${theme.font.sizes[fontSize]};
   `}
 `
-
-export default Text

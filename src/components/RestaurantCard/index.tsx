@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import { Heading } from '../Typography'
-import * as Styled from './styles'
+import { Heading } from '../Heading/styles'
+import * as S from './styles'
 
 type RestaurantCardProps = {
   id: string
@@ -9,7 +9,7 @@ type RestaurantCardProps = {
 }
 
 const RestaurantCard = ({ id, name, image }: RestaurantCardProps) => (
-  <Styled.Card>
+  <S.Card>
     <Link to={`/restaurant/${id}`}>
       <img
         src={image}
@@ -23,7 +23,7 @@ const RestaurantCard = ({ id, name, image }: RestaurantCardProps) => (
         {name}
       </Heading>
     </Link>
-  </Styled.Card>
+  </S.Card>
 )
 
 export default RestaurantCard

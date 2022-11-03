@@ -2,15 +2,16 @@ import { Link } from 'react-router-dom'
 import FormSearch from '../FormSearch'
 import searchIcon from '../../assets/icons/search.svg'
 import logo from '../../assets/logo.svg'
-import * as Styled from './styles'
-import { Heading, Text } from '../Typography'
+import * as S from './styles'
+import { Heading } from '../Heading/styles'
+import { Text } from '../Text/styles'
 
 type HeaderProps = {
   main?: boolean
 }
 
 const Header = ({ main = false }: HeaderProps) => (
-  <Styled.Header>
+  <S.Header>
     <div className="content">
       <Link to="/">
         <img
@@ -43,7 +44,7 @@ const Header = ({ main = false }: HeaderProps) => (
       icon={searchIcon}
       alt="ícone de pesquisa"
     />
-  </Styled.Header>
+  </S.Header>
 )
 
 export default Header

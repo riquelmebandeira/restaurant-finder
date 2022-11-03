@@ -1,6 +1,7 @@
 import * as S from './styles'
 import leftArrow from '../../assets/icons/left-arrow.svg'
-import { Heading, Text } from '../Typography'
+import { Heading } from '../Heading/styles'
+import { Text } from '../Text/styles'
 import { useNavigate } from 'react-router-dom'
 
 type RestaurantHeaderProps = {
