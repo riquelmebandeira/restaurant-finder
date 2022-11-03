@@ -14,6 +14,7 @@ export type Restaurant = {
   telephone: string
   price_range: string
   payment_methods: string
+  website: string
   opening_hours: string
 }
 
@@ -26,4 +27,9 @@ export const fetchRestaurants = async (
     `/?page=${page}&limit=${limit}&search=${search}`
   )
   return restaurants.data.data
+}
+
+export const fetchRestaurant = async (id: string): Promise<Restaurant> => {
+  const restaurant = await api.get(`/${id}`)
+  return restaurant.data.data
 }
