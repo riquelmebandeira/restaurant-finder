@@ -34,4 +34,8 @@ export const Loading = styled.img.attrs({
   src: loadingIcon
 })`
   animation: ${rotate} 2s linear infinite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `
