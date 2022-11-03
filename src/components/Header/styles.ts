@@ -7,6 +7,7 @@ export const Header = styled.header`
   background-position: center;
   height: 37.5rem;
   position: relative;
+  padding: 0 1rem;
   width: 100%;
 
   .content {
@@ -23,10 +24,10 @@ export const Header = styled.header`
   }
 
   form {
-    position: absolute;
-    bottom: 6rem;
+    bottom: 4rem;
     left: 50%;
+    position: absolute;
     transform: translateX(-50%);
-    width: 100%;
+    width: 95%;
   }
 `

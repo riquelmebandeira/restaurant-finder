@@ -35,6 +35,12 @@ export const BackButton = styled.div`
   img {
     margin-right: 1.4rem;
   }
+
+  @media only screen and (max-width: 68.75em) {
+    top: 2rem;
+    right: 2rem;
+    justify-content: end;
+  }
 `
 
 export const Container = styled.div`
